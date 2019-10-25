@@ -1,12 +1,12 @@
-<hi>Student Form</hi>
+<hi>Coupon Form</hi>
 
 <%= form_tag coupons_path do %>
   <label>Coupon Code:</label>
-  <%= text_field_tag :'student[first_name]' %>
+  <%= text_field_tag :'coupon_code' %>
   <br/>
   <label>Store:</label>
-  <%= text_field_tag :'student[last_name]' %>
+  <%= text_field_tag :'store' %>
   <br/>
   <br/>
-  <%= submit_tag "Submit Student" %>
+  <%= submit_tag "Submit Coupon" %>
 <% end %>
