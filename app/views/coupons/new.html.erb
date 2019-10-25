@@ -1,2 +1,12 @@
-<h1>Coupons#new</h1>
-<p>Find me in app/views/coupons/new.html.erb</p>
+<hi>Student Form</hi>
+
+<%= form_tag coupons_path do %>
+  <label>First Name:</label>
+  <%= text_field_tag :'student[first_name]' %>
+  <br/>
+  <label>Last Name:</label>
+  <%= text_field_tag :'student[last_name]' %>
+  <br/>
+  <br/>
+  <%= submit_tag "Submit Student" %>
+<% end %>
